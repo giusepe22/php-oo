@@ -6,4 +6,17 @@ class Produto
     public $valor;
     public $estoque;
 
+    public function __construct($nome, $descricao, $valor, $estoque)
+    {
+        $this->nome = $nome;
+        $this->descricao = $descricao;
+        $this->valor = $valor;
+        $this->estoque = $estoque;
+    }
+
+
+    public function baixaEstoque(){
+        $this->estoque -= 1;
+    }
+
 }
