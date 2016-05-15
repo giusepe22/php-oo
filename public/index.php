@@ -2,11 +2,8 @@
 
 require_once '../src/DEV/Cliente.php';
 require_once '../src/DEV/bancoClientes.php';
-#require_once '../src/DEV/detalhes.php';
-
-
-
 ?>
+
 <!DOCTYPE html>
 <html>
 <head>
