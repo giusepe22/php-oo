@@ -1,6 +1,6 @@
 <?php
 
-require_once "srv/Cliente.php";
+require_once "srv/DEV/Cliente.php";
 
     $clientes = array(
 
