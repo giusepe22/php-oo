@@ -1,6 +1,5 @@
 <?php
 
-
 class Cliente
 {
     public $nome;
@@ -13,7 +12,6 @@ class Cliente
         $this->cpf = $cpf;
         $this->endereco = $endereco;
     }
-
 
     public function getNome()
     {
