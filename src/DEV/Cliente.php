@@ -1,16 +1,30 @@
 <?php
+#namespace DEV\Cliente;
 
 class Cliente
 {
-    public $nome;
-    public $cpf;
-    public $endereco;
+    private $id;
+    protected $nome;
+    protected $cpf;
+    protected $endereco;
 
-    function __construct($nome, $cpf, $endereco)
+    function __construct($id,$nome, $cpf, $endereco)
     {
+        $this->id = $id;
         $this->nome = $nome;
         $this->cpf = $cpf;
         $this->endereco = $endereco;
+
+    }
+
+    public function getId()
+    {
+        return $this->id;
+    }
+
+    public function setId($id)
+    {
+        $this->id = $id;
     }
 
     public function getNome()

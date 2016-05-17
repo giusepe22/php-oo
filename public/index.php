@@ -1,5 +1,4 @@
 <?php
-
 require_once '../src/DEV/Cliente.php';
 require_once '../src/DEV/bancoClientes.php';
 ?>
@@ -46,18 +45,20 @@ require_once '../src/DEV/bancoClientes.php';
 
         <table class="table table-hover">
             <tr>
+                <td>ID</td>
                 <td>NOME</td>
                 <td>CPF</td>
                 <td>ENDERECO</td>
                 <td>ACTIONS</td>
 
             </tr>
-            <?php foreach($arrayClientes as $key=> $cliente): ?>
+            <?php foreach($iterator as $cliente): ?>
                 <tr>
+                    <td><?php echo $cliente->getId(); ?></td>
                     <td><?php echo $cliente->getNome(); ?></td>
                     <td><?php echo $cliente->getCPF(); ?></td>
                     <td><?php echo $cliente->getEndereco(); ?></td>
-                    <td><a href="#">Detalhes</a> </td>
+                    <td><a href="<?php echo 'detalhes.php?id='.$cliente->getId();?>">Detalhes</a> </td>
 
                 </tr>
             <?php endforeach;?>

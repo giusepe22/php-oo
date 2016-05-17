@@ -1,7 +1,7 @@
 <?php
-require_once 'bancoClientes.php';
+require_once '../src/DEV/bancoClientes.php';
 
-$cliente = $arrayClientes [$_GET['id']];
+$cliente = $iterator [$_GET['id']];
 
 ?>
 <!DOCTYPE html>
@@ -9,20 +9,22 @@ $cliente = $arrayClientes [$_GET['id']];
 <head>
     <title>Cadastro de clientes</title>
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <!-- Bootstrap -->
     <link href="css/bootstrap.min.css" rel="stylesheet">
     <link href="css/style.css" rel="stylesheet">
 </head>
 <body>
 <div class="container">
 
-		<h1>Detalhes do Cliente <?php echo $cliente->getNome();?> </h1>
+		<h1>Detalhes do Cliente: <?php echo $cliente->getNome();?> </h1>
 
-	    Nome: <?php echo $cliente->getNome();?>
+	    Nome: <?php echo $cliente->getNome();?><br>
 
-	    CPF: <?php echo $cliente->getCpf();?>
+	    CPF: <?php echo $cliente->getCpf();?><br>
 
-	    Edereco: <?php echo $cliente->getEndereco();?>
+	    Endereco: <?php echo $cliente->getEndereco();?><br>
+        <br>
+        <br>
+        <a class="btn btn-lg btn-primary" href="http://localhost/phpoo/public/" role="button">Retornar &raquo;</a>
 
 </div>
 <!-- jQuery (necessario para os plugins Javascript Bootstrap) -->
