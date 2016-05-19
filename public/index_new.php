@@ -63,7 +63,7 @@ require_once '../src/DEV/bancoClientes.php';
                 </tr>
             <?php endforeach;?>
         </table>
-        <a class="btn btn-lg btn-primary" href="../../components/#navbar" role="button">Retornar &raquo;</a>
+        <a class="btn btn-lg btn-primary" href="#" role="button">Retornar &raquo;</a>
         </p>
     </div>
 
