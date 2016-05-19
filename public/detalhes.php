@@ -1,7 +1,7 @@
 <?php
 require_once '../src/DEV/bancoClientes.php';
 
-$cliente = $iterator [$_GET['id']];
+$cliente = $arrayClientes [$_GET['id']];
 
 ?>
 <!DOCTYPE html>
@@ -24,7 +24,7 @@ $cliente = $iterator [$_GET['id']];
 	    Endereco: <?php echo $cliente->getEndereco();?><br>
         <br>
         <br>
-        <a class="btn btn-lg btn-primary" href="http://localhost/phpoo/public/" role="button">Retornar &raquo;</a>
+        <a class="btn btn-lg btn-primary" href="http://localhost/phpoo-testes/phpoo/php-oo/public/index_new.php" role="button">Retornar &raquo;</a>
 
 </div>
 <!-- jQuery (necessario para os plugins Javascript Bootstrap) -->

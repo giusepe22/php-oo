@@ -52,7 +52,7 @@ require_once '../src/DEV/bancoClientes.php';
                 <td>ACTIONS</td>
 
             </tr>
-            <?php foreach($iterator as $cliente): ?>
+            <?php foreach($arrayClientes as $cliente): ?>
                 <tr>
                     <td><?php echo $cliente->getId(); ?></td>
                     <td><?php echo $cliente->getNome(); ?></td>

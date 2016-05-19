@@ -17,5 +17,6 @@ $arrayClientes = array(
     
 );
 
-    $iterator = new ArrayObject($arrayClientes);
-    $iterator->ksort();
+    #$iterator = new ArrayObject($arrayClientes);
+    #rsort($arrayClientes);
+    rsort($arrayClientes);
