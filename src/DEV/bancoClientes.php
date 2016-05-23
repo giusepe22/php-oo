@@ -19,4 +19,4 @@ $arrayClientes = array(
 
     #$iterator = new ArrayObject($arrayClientes);
     #rsort($arrayClientes);
-    rsort($arrayClientes);
+    #rsort($arrayClientes);

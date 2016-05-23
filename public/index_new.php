@@ -7,7 +7,9 @@ require_once '../src/DEV/bancoClientes.php';
 <html>
 <head>
     <title>Cadastro de clientes</title>
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+
+   <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <!-- Bootstrap -->
     <link href="css/bootstrap.min.css" rel="stylesheet">
     <link href="css/style.css" rel="stylesheet">
@@ -41,9 +43,9 @@ require_once '../src/DEV/bancoClientes.php';
 
     <!-- Main component for a primary marketing message or call to action -->
     <div class="jumbotron">
-        <h1>Cadastro de Clientes</h1>
+        <h1 align="center">Cadastro de Clientes</h1>
 
-        <table class="table table-hover">
+        <table class="table table-hover sortable">
             <tr>
                 <td>ID</td>
                 <td>NOME</td>
@@ -63,7 +65,7 @@ require_once '../src/DEV/bancoClientes.php';
                 </tr>
             <?php endforeach;?>
         </table>
-        <a class="btn btn-lg btn-primary" href="#" role="button">Retornar &raquo;</a>
+        <!--<a class="btn btn-lg btn-primary" href="#" role="button">Retornar &raquo;</a>-->
         </p>
     </div>
 
@@ -71,5 +73,6 @@ require_once '../src/DEV/bancoClientes.php';
 <!-- jQuery (necessario para os plugins Javascript Bootstrap) -->
 <script src="js/jquery.js"></script>
 <script src="js/bootstrap.min.js"></script>
+<script src="js/sorttable.js"></script>
 </body>
 </html>
